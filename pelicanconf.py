@@ -1,6 +1,6 @@
 AUTHOR = 'Anastasia Kryuchkova'
 SITENAME = 'Backend Developer Portfolio'
-SITEURL = ""
+SITEURL = 'https://nestessia.github.io/CourseWork-7semester'
 
 PATH = "content"
 
