@@ -22,5 +22,5 @@ save_as: index.html
 - Разработка API (REST, Swagger документации)
 - Тестирование (Unittest, Pytest)
 
-[Смотреть все проекты →]({{ SITEURL }}/pages/projects.html)
-[Узнать больше обо мне →]({{ SITEURL }}/pages/about.html)
+[Смотреть все проекты →](/CourseWork-7semester/pages/projects.html)
+[Узнать больше обо мне →](/CourseWork-7semester/pages/about.html)
