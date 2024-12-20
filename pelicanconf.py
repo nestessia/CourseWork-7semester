@@ -6,12 +6,11 @@ PATH = "content"
 
 TIMEZONE = 'Europe/Moscow'
 
-DEFAULT_LANG = 'Russian'
+DEFAULT_LANG = 'en'
 
 DISPLAY_PAGES_ON_MENU = True
 DISPLAY_CATEGORIES_ON_MENU = False
 
-STATIC_PATHS = ['images']
 
 # Feed generation is usually not desired when developing
 FEED_ALL_ATOM = None
@@ -38,3 +37,20 @@ DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
+
+THEME_TEMPLATES_OVERRIDES = ['templates']
+PAGE_TEMPLATES = {
+    'index': 'page_index.html',
+    'about': 'page_about.html',
+    'projects': 'page_projects.html'
+}
+
+# Настройки темы
+THEME = 'themes/custom'
+THEME_STATIC_DIR = 'theme'
+
+# Дополнительные настройки путей
+OUTPUT_PATH = 'output'
+
+# Отключение ненужных файлов
+FAVICON_SAVE_AS = ''

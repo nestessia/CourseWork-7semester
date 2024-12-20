@@ -8,29 +8,19 @@ save_as: index.html
 Привет! Я backend-разработчик, специализирующийся на создании надежных и масштабируемых веб-приложений.
 
 ### Мои ключевые навыки:
-- Python (Django, Flask)
-- SQL и работа с базами данных
-- REST API разработка
-- Docker и контейнеризация
-- Git и контроль версий
-
-### Последние проекты:
-1. **Система управления задачами**
-   - Python/Django
-   - PostgreSQL
-   - Docker
-   [Подробнее →](/pages/projects.html)
-
-2. **API для мобильного приложения**
-   - Flask
-   - REST API
-   - JWT авторизация
-   [Подробнее →](/pages/projects.html)
-
-### Образование
-- Российский государственный педагогический унивеситет им. Герцена
-- Направление: Информационные системы и технологии
-- 2020 - 2024
+- Python (Django, Flask, FastAPI)
+- Базы данных (PostgreSQL, SQLAlchemy)
+- Брокеры сообщений (RabbitMQ, Kafka)
+- Очереди задач (Celery)
+- Web Scraping (Pypeteer, Playwright, Selenium, BS4)
+- Разработка Telegram-бота (Aiogram3)
+- Мониторинг и логирование (ELK Stack, Prometheus, Grafana)
+- Контейнеризация (Docker, Docker Swarm, Docker-compose)
+- CI/CD (GitHub Actions)
+- Веб-серверы (Nginx)
+- Системы контроля версий (Git)
+- Разработка API (REST, Swagger документации)
+- Тестирование (Unittest, Pytest)
 
 [Смотреть все проекты →](/pages/projects.html)
 [Узнать больше обо мне →](/pages/about.html)
