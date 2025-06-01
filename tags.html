@@ -4,59 +4,126 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Backend Developer Portfolio - Tags</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/themes/prism.min.css" rel="stylesheet">
-    <link href="/CourseWork-7semester/theme/css/custom.css" rel="stylesheet">
+    <link href="/theme/css/style.css" rel="stylesheet">
+    <script src="/theme/js/stars.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <canvas id="stars-bg"></canvas>
+    <section class="hero-intro" id="hero-intro">
+      <div class="hero-portfolio-wrapper">
+        <h1 class="portfolio-title">Студенческое портфолио</h1>
+        <div class="portfolio-info-box">
+          студентки <b>4</b> курса РГПУ им. Герцена<br>
+          по направлению подготовки <b>09.03.01</b> Информатика и вычислительная техника<bt>
+            <b>Крючковой Анастасии</b>
+        </div>
+        <div class="portfolio-flex-row">
+          <div class="portfolio-left">
+            <div class="portfolio-years">
+              <span class="years-number">2+</span>
+              <span class="years-text">года опыта работы разработчиком</span>
+            </div>
+            <div class="portfolio-tech-label">
+              Опыт работы<br>с такими<br>технологиями<br>как
+            </div>
+          </div>
+          <div class="portfolio-divider"></div>
+          <div class="portfolio-cloud">
+            <span>Python,</span>
+            <span>Django,</span>
+            <span>PostgreSQL</span>
+            <span>RabbitMQ</span>
+            <span>Docker</span>
+          </div>
+        </div>
+      </div>
+      <div class="projects-hero-row">
+        <h1 class="projects-title-on-hero">ИЗУЧЕННЫЕ ДИСЦИПЛИНЫ</h1>
+        <div class="scroll-down-arrow" onclick="document.getElementById('main-content').scrollIntoView({behavior: 'smooth'});">
+          <i class="ri-arrow-down-double-line"></i>
+        </div>
+      </div>
+    </section>
+    <main id="main-content">
         <div class="container">
-            <a class="navbar-brand" href="/CourseWork-7semester/">Backend Developer Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/CourseWork-7semester/pages/about.html">Обо мне</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/CourseWork-7semester/pages/projects.html">Проекты</a>
-                    </li>
+            <div class="projects-grid">
+              <div class="project-card">
+                <h3>1 курс</h3>
+                <ul class="project-list">
+                  <li><a href="https://drive.google.com/drive/folders/1p6IfG3cVGy7SFpr2Hi2poGEO9apxYQp6?usp=sharing">ИТ в математике</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1XIX8pB0e7hEIMla835mfwWSZR38YzhJC?usp=sharing">ИТ в физике</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1hS-xncoLVnaLTZySFsANlFG9bq7kz_Bc?usp=sharing">ИТ</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1xAcSmUG0jYtj85tMDSmSGf8_aaBxILCY?usp=sharing">ОКА</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1pXpbFHdGSYYXrfVrdJuBIYyhTJolB8Xy?usp=sharing">ЛАТМ</a></li>
                 </ul>
+              </div>
+              <div class="project-card">
+                <h3>2 курс</h3>
+                <ul class="project-list">
+                  <li><a href="https://drive.google.com/drive/folders/154GSM_NOUtn7cwjFO26oEgb7yeafmoH5?usp=sharing">ТКМ</a></li>
+                  <li><a href="https://github.com/nestessia/prog_herzen">Программирование</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1zvZ9SqyagtJJQ9QRW2l8dYIIaQ1zoqqM?usp=sharing">Операционные системы</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1QFFsllSXvSFFKV5tzmSULwPXNnsrQncp?usp=sharing">Компьютерный практикум</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/18wj9JZIdLmsvg5nSQXWwY_iUp1ubDe78?usp=sharing">Вычислительная техника</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1pTn-KuJ6gJBWHVqPyTUSKv0qQOYLlutm?usp=sharing">Веб-проектирование</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/11TJBom_paHJKdFYhndu5YNNIIQJb2-gC?usp=sharing">Базы данных</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1Ng3NXpUy7c_mUxcSY_JVIQi3V4hww59S?usp=sharing">Анализ данных</a></li>
+                </ul>
+              </div>
+              <div class="project-card">
+                <h3>3 курс</h3>
+                <ul class="project-list">
+                <li><a href="https://github.com/nestessia/prog_herzen">Программирование</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1Oi27F_LdU58ROhOhUohjNoFZpjc4VBrm?usp=sharing">ТиТПиПИ</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1952fHnSZukCgTDxfxu6MwOrrSMGpmQM8?usp=sharing">ПИТ</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/124Xi-ewWLmitFYL6Pwtq3_FcuggLaNa2?usp=sharing">Основы электронного обучения</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1XGrJoRT9cdGZZ9psAeDjnc6LEhpoGav-?usp=sharing">Основы машинного обучения</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1CHH8s834Q2j2rZF7IHh3rqFMB20_reOT?usp=sharing">Основы бизнес информатики</a></li>
+                  <li><a href="https://drive.google.com/drive/folders/1EGILqszUS8B-fvId22AdrClDuyPNqpP7?usp=sharing">ИТиСБА</a></li>
+                </ul>
+              </div>
+              <div class="project-card">
+                <h3>4 курс</h3>
+                <ul class="project-list">
+                    <li><a href="https://github.com/nestessia/rgpu_7sem/tree/main/Программирование">Программирование</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1L0Go1zgfeTtMgA6EEgjZOnIQ--HmADM7?usp=sharing">ЯНС</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1ooO5-opRRYgTYbISp2VG8DuSJnGkQ5PS?usp=sharing">IT-рекрутмент</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1rLApgEqaarVGYgl48oV6ZFyDPaDjo8PD?usp=sharing">Информационные технологии оценки персонала</a></li>
+                </ul>
+              </div>
+              <div class="project-card center-card">
+                <h3>Курсовые работы</h3>
+                <ul class="project-list">
+                    <li><a href="https://drive.google.com/drive/folders/1jeBiHDMPEpS-wtroO07I1qEMk0r9gNxE?usp=sharing">Исследование ускорения свободного падения тела в полях тяготения разных планет с использованием информационных технологий</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1viiID35E_bEvK4DCW5KyEE1vQZLQOP8F?usp=sharing">Графическое решение задач оптимизации</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/13eLCLjjh7D6guNxz-zuCHuInRPd-dj78?usp=sharing">Интеграция брокеров сообщений в архитектуры больших данных</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1IumMFZoLDEZnJKl2K5la0AUaxzrCobmF?usp=sharing">Проектирование и разработка электронного портфолио бэкэнд-разработчика</a></li>
+                </ul>
+              </div>
+              <div class="project-card center-card">
+                <h3>Практики</h3>
+                <ul class="project-list">
+                    <li><a href="https://github.com/nestessia/Practice">Учебная (эксплуатационная)</a></li>
+                    <li><a href="https://github.com/nestessia/Practice?tab=readme-ov-file">Учебная (технологическая (проектно-технологическая))</a></li>
+                    <li><a href="https://drive.google.com/drive/folders/1_oUKnw83gy7OIFPaNb8-QcLPgfHv3tmC?usp=sharing">Производственная (технологическая (проектно-технологическая))</a></li>
+                    <li><a href="https://github.com/nestessia/practice2024">Производственная (научно-исследовательская работа)</a></li>
+                    <li><a href="https://github.com/nestessia/preddipl">Производственная (преддипломная)</a></li>
+                </ul>
+              </div>
+              <div class="project-card center-card">
+                <h3>Личные достижения</h3>
+                <ul class="project-list">
+                  <li><a href="https://drive.google.com/file/d/1bPks9sBQqxqf0Pak2Etts3lGnBtCvom8/view?usp=sharing">Участие в международной научно-практической конференции</a></li>
+                  <li><a href="https://drive.google.com/file/d/1bPks9sBQqxqf0Pak2Etts3lGnBtCvom8/view?usp=sharing">Участие в Петербургском международном образовательном форуме</a></li>
+                  <li><a href="https://www.elibrary.ru/item.asp?id=53922938">Статья в журнале на тему "ПРЕИМУЩЕСТВА И ПРОБЛЕМЫ NO-CODE ПРОГРАММИРОВАНИЕ"</a></li>
+                  <li><a href="https://www.elibrary.ru/item.asp?id=54064446">Статья в журнале на тему "ИСКУССТВЕННЫЙ ИНТЕЛЛЕКТ: ИСТОРИЯ РАЗВИТИЯ"</a></li>
+                </ul>
+              </div>
             </div>
         </div>
-    </nav>
-
-    <main class="container py-5 mt-5">
-    <h2>Tags for Backend Developer Portfolio</h2>
-    <ul>
-    </ul>
     </main>
-
-    <footer class="footer mt-auto py-3">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-md-4">
-                    <div class="social-links">
-                        <a href="https://github.com/nestessia" target="_blank"><i class="ri-github-fill"></i></a>
-                        <a href="https://t.me/nestessia" target="_blank"><i class="ri-telegram-fill"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-4 text-center">
-                    <p class="mb-0">&copy; 2024 Anastasia Kryuchkova</p>
-                </div>
-                <div class="col-md-4 text-end">
-                    <p class="mb-0">Made with <i class="ri-heart-fill text-danger"></i> using Python</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/prism.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.24.1/components/prism-python.min.js"></script>
+    <!-- RemixIcon CDN for icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </body>
 </html>
