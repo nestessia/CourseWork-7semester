@@ -1,6 +1,6 @@
 AUTHOR = 'Anastasia Kryuchkova'
 SITENAME = 'Backend Developer Portfolio'
-SITEURL = 'https://nestessia.github.io/CourseWork-7semester'
+SITEURL = ''
 RELATIVE_URLS = False
 
 PATH = "content"
@@ -55,3 +55,12 @@ OUTPUT_PATH = 'output'
 
 # Отключение ненужных файлов
 FAVICON_SAVE_AS = ''
+
+# Пути к статическим файлам темы
+STATIC_PATHS = ['static/css', 'static/js']
+
+EXTRA_PATH_METADATA = {
+    'themes/attila/static/css/custom.css': {'path': 'theme/css/custom.css'},
+    'themes/attila/static/css/style.css': {'path': 'theme/css/style.css'},
+    'themes/attila/static/js/stars.js': {'path': 'theme/js/stars.js'},
+}
