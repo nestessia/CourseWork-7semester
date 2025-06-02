@@ -28,8 +28,8 @@ body {
 }
 
 html, body {
-    height: auto !important;
-    min-height: 0 !important;
+    height: 100%;
+    min-height: 100%;
 }
 
 a {
@@ -165,7 +165,7 @@ button:hover, .btn:hover {
 
 
 .hero-intro {
-    min-height: 0 !important;
+    min-height: 100vh;
     width: 100vw;
     display: flex;
     align-items: center;
@@ -210,12 +210,12 @@ button:hover, .btn:hover {
     padding-right: 40px;
     box-sizing: border-box;
     margin-top: 0;
+    margin-bottom: 50rem;
     background: #ffffff;
     position: relative;
     z-index: 1;
     border-radius: 32px 32px 0 0;
     box-shadow: 0 0 24px rgba(0, 0, 0, 0.1);
-    padding-bottom: 0 !important;
 }
 
 #main-content h1, #main-content h2, #main-content h3 {
@@ -408,7 +408,6 @@ button:hover, .btn:hover {
     justify-content: center;
     margin: 2.5rem 0;
     margin-top: 3rem;
-    margin-bottom: 0 !important;
 }
 
 .project-card {
@@ -432,7 +431,6 @@ button:hover, .btn:hover {
     margin-left: auto;
     margin-right: auto;
     width: 45%;
-    margin-bottom: 0 !important;
 }
 
 .project-card h3 {
@@ -522,14 +520,13 @@ button:hover, .btn:hover {
 /* ====== COSMIC FOOTER ====== */
 .cosmic-footer {
     width: 100%;
-    background: #fff !important;
-    border-top: 1.5px solid #e0e6f7;
-    margin-top: 2rem;
-    padding: 2rem 0 1.2rem 0;
-    box-shadow: none !important;
+    background: rgba(24, 28, 47, 0.2);
+    border-top: 1.5px solid rgba(126, 232, 250, 0.10);
+    margin-top: 0rem;
+    padding: 2.2rem 0 1.2rem 0;
+    box-shadow: 0 0 24px #7ee8fa10;
     border-radius: 24px 24px 0 0;
 }
-
 .footer-content {
     display: flex;
     flex-direction: column;
@@ -537,50 +534,44 @@ button:hover, .btn:hover {
     justify-content: center;
     gap: 1.2rem;
 }
-
 .footer-social {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    margin: 1.2rem 0 0 0;
+    gap: 2.5rem;
+    margin: 2.5rem 0 0 0;
 }
-
 .footer-social a {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 48px;
-    background: #f7f7fa !important;
+    width: 64px;
+    height: 64px;
+    background: linear-gradient(135deg, #232946 60%, #7ee8fa 100%);
     border-radius: 50%;
-    box-shadow: 0 0 8px #e0e6f7;
-    font-size: 2rem;
-    color: #232946 !important;
-    transition: transform 0.25s, box-shadow 0.25s, background 0.25s, color 0.25s;
-    border: 2px solid #e0e6f7 !important;
+    box-shadow: 0 0 24px #7ee8fa60, 0 0 8px #fff;
+    font-size: 2.5rem;
+    color: #fff;
+    transition: transform 0.25s, box-shadow 0.25s, background 0.25s;
+    border: 2.5px solid #7ee8fa;
     position: relative;
 }
-
 .footer-social a:hover {
-    background: #e0aaff !important;
-    color: #181c2f !important;
+    background: linear-gradient(135deg, #e0aaff 60%, #7ee8fa 100%);
+    color: #232946;
     transform: scale(1.13) rotate(-8deg);
-    box-shadow: 0 0 16px #e0aaffcc, 0 0 8px #fff;
-    border-color: #e0aaff !important;
+    box-shadow: 0 0 36px #e0aaffcc, 0 0 12px #fff;
+    border-color: #e0aaff;
 }
-
 .footer-text {
     text-align: center;
 }
-
 .footer-text p {
-    color: #181c2f;
+    color: #e0e6f7;
     margin: 0.2em 0;
     font-size: 1.08rem;
     letter-spacing: 0.01em;
 }
-
 .footer-text .ri-heart-fill {
     color: #e0aaff;
     vertical-align: middle;
@@ -588,7 +579,6 @@ button:hover, .btn:hover {
     margin: 0 0.1em;
     text-shadow: 0 0 8px #e0aaff80;
 }
-
 @media (max-width: 700px) {
     .cosmic-footer {
         padding: 1.2rem 0 0.7rem 0;
@@ -643,6 +633,7 @@ button:hover, .btn:hover {
     width: 100%;
     gap: 2.5rem;
     margin-top: 1.5rem;
+    margin-bottom: 30rem;
 }
 .portfolio-left {
     display: flex;
